@@ -1,0 +1,166 @@
+.footer_container{
+    width: 100%;
+    margin-top: 0.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border: 2px solid black; */
+}
+.conditons_section{
+    width: 100%;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    /* gap: 10rem; */
+    background-color: rgb(174,70,0);
+    /* border: 2px solid black; */
+}
+.terms_condition{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    /* border: 2px solid black; */
+}
+.conditons_section a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+.support{
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+.support p {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+}
+.visibilty_hidden{
+    visibility: hidden;
+}
+.footer_bottom{
+    width: 100%;
+    padding: 10px 20px;
+    /* border: 2px solid greenyellow; */
+}
+.secure_container{
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid yellow; */
+}
+.secure_container img{
+    width: 100px;
+}
+.inside_secure_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* border: 2px solid red; */
+}
+.three_icons {
+    /* border: 2px solid black; */
+    display: flex; /* Ensures children are flex items */
+    gap: 0.5rem; /* Adds a gap of 1rem between items */
+    align-items: center; /* Vertically aligns items */
+    justify-content: center; /* Center-aligns items horizontally (optional) */
+}
+
+.three_icons img {
+    width: 30px;
+    height: 30px;
+}
+.footer_container .copyright{
+    margin-top: 0.1rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1061px){
+    .conditons_section{
+        width: 100%;
+        padding: 7px 0px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* gap: 10rem; */
+        background-color: rgb(174,70,0);
+        /* border: 2px solid black; */
+    }
+    .terms_condition{
+        width: 100%;
+        font-size: 0.9rem;
+        margin-top: 0.2rem;
+        text-decoration: underline white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        /* border: 2px solid black; */
+    }
+    .support{
+        width: 100%;
+        margin-top: 0.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    .support p {
+        font-size: 1.1rem;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer_bottom{
+        width: 100%;
+        padding: 10px 20px;
+        /* border: 2px solid greenyellow; */
+    }
+    .secure_container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        /* justify-content: space-between;
+        align-items: center; */
+        /* border: 2px solid yellow; */
+    }
+    .secure_container img{
+        width: 60px;
+    }
+    .inside_secure_container{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        /* border: 2px solid red; */
+    }
+    .inside_secure_container b {
+        font-size: 0.9rem;
+    }
+    .inside_secure_container p{
+        font-size: 0.8rem;
+    }
+    .three_icons {
+        /* border: 2px solid black; */
+        display: flex; /* Ensures children are flex items */
+        gap: 0.5rem; /* Adds a gap of 1rem between items */
+        align-items: center; /* Vertically aligns items */
+        justify-content: center; /* Center-aligns items horizontally (optional) */
+    /* border: 2px solid black; */
+    }
+    
+    .three_icons img {
+        width: 20px;
+        height: 20px;
+    }
+    .footer_container .copyright{
+        margin-top: 0.1rem;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+}

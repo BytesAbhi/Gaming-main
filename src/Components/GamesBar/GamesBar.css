@@ -1,0 +1,72 @@
+.gamesList_container{
+    width: 100%;
+    color: white;
+    background-color: rgb(185,114,66);
+}
+.listsOfGames{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.listsOfGames li {
+    position: relative; 
+    cursor: pointer;
+    padding-bottom: 2px; 
+    transition: color 0.3s ease; 
+}
+ .remove_decor{
+    text-decoration: none;
+    color: white;
+ }
+
+
+.listsOfGames li::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0; 
+    left: 50%; 
+    width: 0; 
+    height: 2px; 
+    background-color: #ffffff; 
+    transform: translateX(-50%); 
+    transition: width 0.3s ease; 
+}
+
+.listsOfGames li:hover::after {
+    width: 100%; 
+}
+
+@media screen and (max-width:1024px){
+    .gamesList_container{
+        display: none;
+    }
+    .listsOfGames{
+        font-size: 0.8rem;
+        gap: 1.2rem;
+    }
+}
+@media screen and (max-width:875px){
+    .listsOfGames{
+        font-size: 0.6rem;
+        gap: 1.1rem;
+    }
+}
+@media screen and (max-width:699px){
+    .listsOfGames{
+        font-size: 0.5rem;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width:590px){
+    .listsOfGames{
+        font-size: 0.45rem;
+        gap: 0.9rem;
+        overflow-x: scroll;
+    }
+}

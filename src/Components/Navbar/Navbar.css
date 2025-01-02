@@ -1,0 +1,234 @@
+.navbar_container{
+    width: 100%;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(174,70,0);
+    /* border: 2px solid black; */
+}
+.nav_leftSection{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-align: center;
+}
+.set_logo{
+    max-height: 65px;
+    max-width: 200px;
+    display: inline-block;
+}
+
+.nav_rightSection{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+    align-items: center;
+    /* border: 2px solid; */
+}
+
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    gap: 0.7rem;
+    max-width: 180px;
+    /* border: 2px solid red; */
+  }
+  
+  .input {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 30px;
+    padding-left: 1rem;
+    /* box-shadow: 0 0 0 1.5px #2b2c37, 0 0 25px -17px #000; */
+    border: 0;
+    border-radius: 12px;
+    background-color: #ffffff;
+    outline: none;
+    color: #000000;
+    transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+    cursor: text;
+    z-index: 0;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @media screen and (max-width:768px){
+    .group{
+      display: none;
+    }
+  }
+  
+  .input::placeholder {
+    color: #9e9ea8;
+  }
+  
+  .input:active {
+    transform: scale(0.95);
+  }
+  
+  
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea8;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .rules{
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .balance{
+    font-size: 1.01rem;
+    font-weight: 500;
+  }
+  .demo_icon{
+    position: relative;
+    cursor: pointer;
+  }
+  .demo{
+    font-size: 1.01rem;
+    font-weight: 500;
+  }
+
+  .dropdown_menu {
+    position: absolute;
+    color: black;
+    top: 100%;
+    right: 0px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 170px;
+    z-index: 10;
+    /* border: 2px solid black; */
+  }
+  
+  .dropdown_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+  }
+  
+  .dropdown_menu li {
+    font-weight: 500;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  .hide_screen{
+    display: none;
+  }
+  .hide_screen .balance_inp{
+    margin-left: 4rem;
+  }
+  .hide_screen .exposure_inp{
+    margin-left: 3.4rem;
+  }
+  
+  .dropdown_menu li:hover {
+    text-decoration: underline;
+    background-color: #dfdbdb;
+  }
+  
+
+  @media screen and (max-width: 1125px){
+    .nav_rightSection{
+        width: 45%;
+    }
+    .hide_screen{
+      display: block;
+    }
+    .rules{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1020px){
+    .nav_rightSection{
+        width: 55%;
+    }
+  }
+  @media screen and (max-width: 850px){
+    .nav_rightSection{
+        width: 60%;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .input {
+        display: none;
+      }
+      .search-icon{
+        display: none;
+      }
+      .nav_rightSection{
+        width: 40%;
+    }
+    .rules{
+        display: none;
+    }
+    .set_logo{
+        max-height: 65px;
+        max-width: 150px;
+        display: inline-block;
+    }
+    /* .dropdown_menu {
+        top: 10%;
+      } */
+      .dropdown_menu li {
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 8px 10px;
+        cursor: pointer;
+      }
+      
+      .dropdown_menu li:hover {
+        text-decoration: underline;
+        background-color: #dfdbdb;
+      }
+  }
+  @media screen and (max-width: 530px){
+    .nav_rightSection{
+        width: 55%;
+    }
+    .set_logo{
+        max-height: 65px;
+        max-width: 120px;
+        display: inline-block;
+    }
+    .balance{
+        font-size: 1rem;
+    }
+    .demo{
+        font-size: 1rem;
+    }
+    /* .dropdown_menu {
+        top: 11%;
+        width: 150px;
+      } */
+  }
+  @media screen and (max-width: 430px){
+    .nav_rightSection{
+        width: 60%;
+    }
+    .set_logo{
+        max-width: 120px;
+    }
+    .balance{
+        font-size: 0.9rem;
+    }
+    .demo{
+        font-size: 0.9rem;
+    }
+  }

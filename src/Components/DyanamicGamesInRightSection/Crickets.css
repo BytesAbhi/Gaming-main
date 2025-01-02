@@ -1,0 +1,203 @@
+.crickets_container {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    /* border: 2px solid; */
+}
+
+.line {
+    width: 100%;
+    margin-top: 0.2rem;
+    border: 1px solid rgb(199, 200, 202);
+}
+
+.line2 {
+    width: 100%;
+    border: 0.2px solid rgb(199, 200, 202);
+}
+
+.top_names {
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 3px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.bet {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    justify-content: space-evenly;
+    /* border: 2px solid; */
+}
+
+.games_descriptions {
+    width: 100%;
+}
+
+.set_data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    /* padding: 3px 6px; */
+    border-top: 0px solid rgb(199, 200, 202);
+    border-bottom: 0.2px solid rgb(199, 200, 202);
+}
+.data_names span{
+    padding: 0px 5px;
+}
+
+.set_names_icons {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.set_dataIcons {
+    width: 20%;
+    display: flex; 
+    justify-content: space-between;  /* Align the icons horizontally */
+    /* border: 2px solid red; */
+}
+
+
+.place_bet {
+    width: 35%;
+    height: 22px;
+    display: flex;
+    /* border: 2px solid purple; */
+}
+.first_bet{
+    width: 33.5%;
+    display: flex;
+    /* border: 2px solid yellow; */
+}
+.first_betBox{
+    width: 50%;
+    text-align: center;
+    background-color: rgb(114,187,239);
+    /* border: 1px solid; */
+}
+.second_betBox{
+    width: 50%;
+    text-align: center;
+    background-color: rgb(250,169,186);
+    /* border: 1px solid; */
+}
+.second_bet{
+    width: 33.5%;
+    display: flex;
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+.third_bet{
+    width: 33.5%;
+    display: flex;
+    /* border: 2px solid rgb(255, 8, 0); */
+}
+
+.active_nonActive_icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+.active_circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(40, 167, 69);
+}
+
+.icon_placeholder {
+    width: 16px;
+    height: 16px;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .set_data {
+        flex-direction: column;  /* Stack items vertically on smaller screens */
+        align-items: start;
+    }
+
+    .set_names_icons {
+        width: 100%;  /* Make sure name and icons take full width */
+    }
+
+    .set_dataIcons {
+        width: 20%;  /* Make sure icons take full width in smaller screens */
+        justify-content: space-between;  /* Align icons with space in between */
+    }
+
+    .place_bet {
+        width: 100%;  /* Make place_bet take full width and appear below icons */
+        margin-top: 10px;  /* Add some space between icons and place_bet */
+    }
+    .top_names {
+       display: none;
+    }
+}
+
+.showAll_games {
+    width: 100%;
+    display: grid;  /* Use grid layout */
+    grid-template-columns: repeat(8, 1fr);  /* 4 equal columns */
+    gap: 1rem;  /* Space between grid items */
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0px 5px;
+}
+
+.games_img {
+    width: 100%;  /* Make sure images take full width of their grid cell */
+    display: flex;
+    flex-direction: column;  /* Stack name and image vertically */
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.games_img img {
+    width: 100%;  /* Ensure image takes full width of the container */
+    height: 100px;  /* Set a fixed height */
+    object-fit: contain;
+}
+
+.games_img p {
+    position: absolute;
+    top: 79%;
+    width: 100%;
+    font-size: 0.7rem;
+    padding: 4px 0;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(176, 80, 14);
+}
+
+@media screen and (max-width: 1024px) {
+    .showAll_games {
+        grid-template-columns: repeat(7, 1fr);  /* 2 columns on smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .showAll_games {
+        grid-template-columns: repeat(6, 1fr);  /* 1 column on even smaller screens */
+    }
+}
+@media screen and (max-width: 600px) {
+    .showAll_games {
+        grid-template-columns: repeat(4, 1fr);  /* 1 column on even smaller screens */
+    }
+}

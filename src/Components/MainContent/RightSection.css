@@ -1,0 +1,10 @@
+.rightSection_container{
+    width: 82.5%;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border: 2px solid black; */
+}
+@media screen and (max-width: 1024px){
+    .rightSection_container{
+        width: 100%;
+    }
+}

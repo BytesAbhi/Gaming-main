@@ -1,0 +1,25 @@
+.gameDetails_container{
+    width: 100%;
+    /* border: 2px solid red; */
+}
+.gameDetails_twoSection{
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+.gameDetails_leftSection{
+    width: 68%;
+    height: 60vh;
+    /* border: 2px solid yellow; */
+}
+.gameDetails_rightSection{
+    width: 30%;
+    border: 2px solid green;
+}
+.gameDetails_description{
+    width: 100%;
+    margin-top: 1rem;
+    border: 2px solid black;
+}

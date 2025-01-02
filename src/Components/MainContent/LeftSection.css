@@ -1,0 +1,131 @@
+.leftSection_container {
+    width: 17%;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border: 2px solid black; */
+}
+@media screen and (max-width: 1024px){
+    .leftSection_container {
+        display: none;
+    }
+}
+
+.racing_sports {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(174, 70, 0);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.down_arrow {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Hidden state */
+.show_list {
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease;
+    /* border: 2px solid black; */
+}
+
+/* Visible state */
+.show_list_visible {
+    max-height: 1500px; 
+    opacity: 1;
+}
+
+/* Optional for smoother transitions */
+.show_list_visible ul {
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Styling for dynamic items */
+.border_top {
+    width: 100%;
+    font-size: 0.77rem;
+    border-top: 1px solid rgb(158, 158, 158);
+}
+
+.set_txt {
+    padding-left: 0.4rem;
+}
+
+/* Dynamic spacing for nested items */
+.dynamic_item {
+    margin-left: 20px; 
+}
+
+/* Line separator for list items */
+.list_items .line {
+    width: 100%;
+    border: 1px solid rgb(158, 158, 158);
+}
+
+
+.show_list .list_items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    list-style: none;
+    font-size: 0.81rem;
+    font-weight: 500;
+    background-color: rgb(187, 187, 187);
+    /* border: 2px solid; */
+}
+.list_items li{
+    cursor: pointer;
+}
+
+.list_items .shift {
+    padding: 2px 12px;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    /* border: 2px solid; */
+}
+.set_things{
+    list-style: none;
+    border-bottom: 1px solid rgb(158, 158, 158);
+}
+.set_sublists{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-top: 1px solid rgb(158, 158, 158);
+}
+.set_inside_sublists{
+    list-style: none;
+    border-top: 1px solid rgb(158, 158, 158);
+    padding-left: 1.2rem;
+}
+.list_items .line {
+    width: 100%;
+    border: 1px solid rgb(158,158,158);
+}
+.add_box{
+    font-size: 1.0rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+.cancel_box{
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+
+.border_top{
+    width: 100%;
+    /* padding-left: 0.5rem; */
+    font-size: 0.77rem;
+    border-top: 1px solid rgb(158,158,158);
+}
+.set_txt{
+    padding-left: 0.4rem;
+}

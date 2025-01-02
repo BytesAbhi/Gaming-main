@@ -1,0 +1,186 @@
+.home_container{
+    width: 100%;
+    font-family: "Roboto Condensed", sans-serif;
+    /* border: 2px solid red; */
+}
+.highlights_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+    /* border: 2px solid green; */
+}
+.right_highlights{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    /* border: 2px solid red; */
+}
+.highlight_box{
+    width: 26%;
+    /* height: 5vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px;
+    text-align: center;
+    background-color: rgb(185,114,66);
+    /* border: 2px solid palevioletred; */
+}
+.highlight_box a{
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0; /* Makes the element invisible for half the time */
+    }
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite; /* Blinking effect */
+    text-decoration: none; /* Ensures no underline for links */
+    color: palevioletred; /* Optional: Set the text color */
+    font-weight: bold; /* Optional: Make the text stand out */
+}
+
+/* Add delays to each highlight box */
+.right_highlights .highlight_box:nth-child(1) .blink_me {
+    animation-delay: 0s;
+}
+
+.right_highlights .highlight_box:nth-child(2) .blink_me {
+    animation-delay: 0s;
+}
+
+.right_highlights .highlight_box:nth-child(3) .blink_me {
+    animation-delay: 0s;
+}
+
+.right_highlights .highlight_box:nth-child(4) .blink_me {
+    animation-delay: 0s;
+}
+
+.right_highlights .highlight_box:nth-child(5) .blink_me {
+    animation-delay: 0s;
+}
+
+
+.game_bar{
+    width: 100%;
+    margin-top: 0.3rem;
+    /* border: 2px solid black; */
+}
+.boxes {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    /* border: 2px solid black; */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    
+    /* Hide scrollbar */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  .boxes::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Edge */
+  }
+  
+  .boxes li {
+    flex-shrink: 0;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    border-right: 1px solid palevioletred;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: rgb(204, 204, 204); /* Default background color */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for color */
+    color: white;
+  }
+  
+  .boxes li.selected {
+    background-color: rgb(185, 114, 66); /* Background color for selected item */
+    color: white; /* Optional: Change text color */
+  }
+  
+  .boxes li:last-child {
+    border-right: none;
+  }
+
+@media screen and (max-width: 1024px){
+    .home_container{
+        width: 100%;
+        font-family: "Roboto Condensed", sans-serif;
+        /* border: 2px solid red; */
+    }
+    .highlights_box {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 0.3rem;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-behavior: smooth; /* Smooth scrolling */
+        /* padding: 0.5rem 0;  */
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+
+    .highlights_box::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Edge */
+    }
+
+    .highlight_box {
+        flex-shrink: 0; /* Prevent shrinking */
+        width: auto; /* Adjust width automatically based on content */
+        min-width: 350px; /* Set a minimum width */
+        padding: 6px 0px;
+        text-align: center;
+        background-color: rgb(185, 114, 66);
+        /* border: 2px solid palevioletred; */
+    }
+
+    .highlight_box a {
+        text-align: center;
+        font-size: 0.8rem;
+        color: white;
+        text-decoration: none;
+    }
+    .game_bar{
+        width: 100%;
+        margin-top: 0.1rem;
+        /* border: 2px solid black; */
+    }
+    .boxes li {
+        flex-shrink: 0;
+        width: 80px;
+        text-align: center;
+        padding: 10px 0px;
+        border-right: 0.1px solid rgb(91, 85, 85);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: rgb(185,114,66); /* Default background color */
+        cursor: pointer; /* Change cursor on hover */
+        transition: background-color 0.3s ease; /* Smooth transition for color */
+        font-size: 0.7rem;
+      }
+      .boxes li.selected {
+        background-color: rgb(65,128,155); /* Background color for selected item */
+        color: white; /* Optional: Change text color */
+      }
+}

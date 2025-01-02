@@ -1,0 +1,42 @@
+.horse_container {
+    width: 100%;
+  }
+  
+  .short_name {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0.3rem;
+  }
+  
+  .short_data {
+    cursor: pointer;
+    padding: 5px 10px;
+    list-style: none;
+    background-color: rgb(204, 204, 204); /* Default background color */
+    border: 1px solid black;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .short_data.selected {
+    background-color: rgb(185, 114, 66); /* Selected background color */
+    color: white; /* Optional: Change text color for contrast */
+  }
+  
+  .details{
+    width: 100%;
+    font-size: 0.8rem;
+    /* padding: 5px 10px; */
+    background-color: rgb(242,242,242);
+    
+  }
+  .set_selectedData{
+    display: flex;
+    gap: 5rem;
+    padding: 10px 9px;
+    border-bottom: 1px solid rgb(204,204,204);
+  }
+  .set_selectedData span{
+    margin-left: 0.6rem;
+    /* border: 2px solid red; */
+  }
